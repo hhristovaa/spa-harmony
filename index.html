@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa Harmony</title>
+    <!-- Font Awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&display=swap" rel="stylesheet">
+    <!--Custom Stylesheet-->
+    <link href="styles/styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <div class="nav-brand">
+                    <a href="index.html"> <img src="img/logo.png" alt="Spa Harmony Logo"> </a>
+                </div>
+                <ul id="menu" class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reviews" class="nav-link">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-message">
+                    <h1>Heal your mind &amp; body</h1>
+                    <div class="cta">
+                        <a href="booking.html" target="_blank" class="btn">Book now</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="title-heading">
+                    <h1>About</h1>
+                    <p>Welcome to the Spa Harmony Center in Geneva! Your journey to a better physical and mental health starts here! </p>
+                </div>
+                <div class="about-grid">
+                    <!--grid item 1-->
+
+                    <div class="about-grid-item history">
+                        <h1>Our History</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                    <!--grid item 2-->
+                    <div class="about-grid-item  mission">
+                        <h1>Our Mission</h1>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    </div>
+                    <!--grid item 3-->
+                    <div class="about-grid-item  team">
+                        <h1>Our Team</h1>
+                        <p> All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                    </div>
+                </div>
+                <!-- video light box-->
+                <div class="cta">
+                    <div id="light">
+                        <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                        <video id="yogavideo" width="720" controls>
+                            <source src="img/yoga.mp4" type="video/mp4">
+                            Browser does not support this video.
+                        </video>
+                    </div>
+                    <div id="fade" onClick="lightbox_close();"></div>
+                    <a href="#" onclick="lightbox_open();" class="btn">Watch Video</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- services -->
+        <section id="services" class="services" >
+            <div class="container">
+                <div class="title-heading">
+                    <h1>Services</h1>
+                    <p>We offer exceptional spa and health services in our Spa Harmony Center - a place to find peace in body, mind and soul.  </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <div class="services-grid-item sauna">
+                        <h1>Sauna </h1>
+                        <div class="front">
+                            <img src="img/sauna.jpg" alt="Sauna">
+                        </div>
+                        <div class="back"> Having a sauna session regularly can offer a list of health benefits no wonder the demand is getting higher to relax this way. </div>
+                    </div>
+
+                    <div class="services-grid-item pool">
+                        <h1>Pool </h1>
+                        <div class="front">
+                            <img src="img/pool.jpg" alt="Pool">
+                        </div>
+                        <div class="back"> The health benefits of mineral pools are seemingly extensive. They have been found to help improve circulation, alleviate pain, relieve stress, as well as being gentler on the skin.</div>
+                    </div>
+
+                    <div class="services-grid-item salt-room">
+                        <h1> Salt Room</h1>
+                        <div class="front">
+                            <img src="img/salt-room.jpg" alt="Salt Room">
+                        </div>
+                        <div class="back">Halotherapy is an alternative treatment that involves breathing salty air. Some claim that it can treat respiratory conditions, such as asthma, chronic bronchitis, and allergies.</div>
+                    </div>
+
+
+                    <div class="services-grid-item massages">
+                        <h1>Massages </h1>
+                        <div class="front">
+                            <img src="img/massages.jpg" alt="Massages">
+                        </div>
+                        <div class="back">Need a massages? Trust our professionals at Spa Harmony. You can choose from therapists all around the world.  </div>
+                    </div>
+
+                    <div class="services-grid-item facials">
+                        <h1>Facials </h1>
+                        <div class="front">
+                            <img src="img/facials.jpg" alt="Facials">
+                        </div>
+                        <div class="back">Reinvigorate your natural radiance with facials customized specifically for your skin with products from Korea.</div>
+                    </div>
+
+                    <div class="services-grid-item therapy">
+                        <h1>Aromatherpay </h1>
+                        <div class="front">
+                            <img src="img/therapy.jpg" alt="Aromatherapy">
+                        </div>
+                        <div class="back">Therapy with essential oils and relaxing music to improve the health of the body, mind and spirit.</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- reviews -->
+        <section id="reviews" class="reviews">
+            <div class="title-heading">
+                <h1>Reviews</h1>
+                <p>Here you can find some honest reviews of our lovely visitors! </p>
+            </div>
+            <div class="container">
+
+                <div class="slides">
+                    <q>Very good service and nice facility! Would definitely visit again!</q>
+                    <p class="author">- John Gibson</p>
+                    <img src="img/john.jpg" alt="John Gibson Image" class="visitor fade">
+                </div>
+
+                <div class="slides">
+                    <q>Clean spa center and very cozy atmosphere! Great massage!</q>
+                    <p class="author">- Natalie Maiden</p>
+                    <img src="img/natalie.jpg" alt="Natalie Maiden Image" class="visitor fade">
+                </div>
+
+                <div class="slides">
+                    <q>This was my third visit and everything was exceptional!</q>
+                    <p class="author">- William Bridgerton </p>
+                    <img src="img/william.jpg" alt="William Bridgerton" class="visitor fade">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="title-heading">
+                <h1>Contacts</h1>
+                <p>Here you can get in touch with us. </p>
+            </div>
+
+            <div class="container">
+
+                <form autocomplete="off">
+                    <div class="input_group">
+                        <label for="name" class="contactsLabel">Name</label>
+                        <input type="text" name="" class="box" id="name">
+                    </div>
+                    <div class="input_group">
+                        <label for="Email" class="contactsLabel">Email</label>
+                        <input type="text" name="" class="box" id="Email">
+                    </div>
+                    <div class="input_group">
+                        <label for="subject" class="contactsLabel">Subject</label>
+                        <input type="text" name="" class="box" id="subject">
+                    </div>
+                    <div class="input_group">
+                        <label for="Message" class="contactsLabel">Your Message</label>
+                        <textarea id="Message" class="box"></textarea>
+                    </div>
+                    <div class="input_group">
+                        <a href="#" class="submitbtn" id="alertbtn">Submit</a>
+                    </div>
+                </form>
+        </section>
+
+        <footer>
+            <a href="#">&copy;	2021 Spa Harmony Center</a> <br>
+            <a id="topbtn"><i class="fa fa-angle-up"></i></a>
+        </footer>
+    </main>
+
+    <!--Sweet Alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+     <!-- custom JavaScript file-->
+    <script src="scripts/scripts.js"></script>
+
+</body>
+</html>
